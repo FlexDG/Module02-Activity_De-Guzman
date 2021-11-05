@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felix's Personal Website || Landing Page</title>
+    <link rel="stylesheet" type ="text/css" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <nav>
+    
+ <header id ="header">   
+<a href="#" class="logo">Felix's Personal Website</a>
+<ul>
+<li><a href="#" class="active">Home </a></li>
+<li><a href="#">About Me</a> </li>
+ 
+<li><a href="#">Contact</a> </li>
+
+</ul>
+ </header>
+  </nav>
+  
+ <section>
+ 
+<h2 id="text"><span> Welcome To My</span><br> Personal Website!</h2>
+<img src="bird1.png" id="bird1">
+<img src="bird2.png" id="bird2">
+<img src="forest.png" id="forest">
+<a href="#" id="btn">Exlpore</a>
+<img src="rocks.png" id="rocks">
+<img src="water.png" id="water">
+ 
+ </section>
+ 
+ <article class="about">
+    
+    <header class="container">
+   <div class="about_main">
+    <div class="about_main_content">
+<h1 class="about_main_content_h1">ABOUT ME</h1>
+ 
+<p class="about_main_content_p">
+
+   Hello, my name is Felix Rafael D. De Guzman, I am an aspiring UX/UI 
+   Designer who is currently studying Bachelor of Science and Technology 
+   in Angeles University Foundation on my third year of college. I really
+   have a deep passion for front-end development since this is where I
+actually have fun whenever I try to code or do an activity. I also love playing
+games on my free time, maybe this is also a big factor on why I chose to
+commit to the field of programming. 
+
+</p>
+
+<button class="cta">VIEW MORE</button>
+</div>
+
+    <div class="about_main_img">
+
+<img src ="flex.png" alt="">
+    </div>
+   
+<div class="wrapper">
+<div class="button">
+<div class="icon">
+            <i class="fab fa-facebook-f"></i>
+   </div>
+   <span>Facebook</span>
+</div>
+<div class="button">
+ <div class="icon">
+ <i class="fab fa-twitter"></i>
+</div>
+<span>Twitter</span>
+</div>
+ <div class="button">
+<div class="icon">
+   <i class="fab fa-instagram"></i>
+ </div>
+   <span>Instagram</span>
+</div>
+ <div class="button">
+  <div class="icon">
+   <i class="fab fa-youtube"></i>
+ </div>
+<span>Youtube</span>
+</div>
+       
+
+</div>
+<div class="variant">
+
+ <img src="variant.png" alt="">
+</div>
+
+<div class="variant2">
+
+   <img src="variant.png" alt="">
+  </div>
+
+</div>
+
+
+
+    </header>
+   </article>
+ 
+<script>
+
+
+let text = document.getElementById('text');
+let bird1 = document.getElementById('bird1');
+let bird2 = document.getElementById('bird2');
+let btn = document.getElementById('btn');
+let rocks = document.getElementById('rocks');
+let forest = document.getElementById('forest');
+let water = document.getElementById('water');
+let header = document.getElementById('header');
+
+window.addEventListener('scroll', function(){
+
+let value = window.scrollY;
+
+text.style.top = 40 + value * -0.1 + '%'; 
+bird1.style.top = value * -1.5 + 'px';
+bird1.style.left = value * 1 + 'px';
+bird2.style.top = value * -1.5 + 'px';
+bird2.style.left = value * -5 + 'px';
+btn.style.marginTop = value * 1.5 + 'px';
+rocks.style.top = value * -0.20 + 'px';
+forest.style.top = value * 1 + 'px';
+header.style.top = value * -0.5 + 'px';
+})
+
+</script>
+ 
+  
+ 
+   
+   </section>
+   
+   <section class="contact-section">
+      <div class="section-titlee text-center">
+     <hgroup>
+         <center><h2>Contact Me</h2>
+         <p>For more queries and transparency.</p></center>
+         </hgroup>
+     </div>
+ 
+      <div class="container-contact">
+        
+        <div class="contact-form">
+
+         
+          <div>
+            <i class="fa fa-map-marker"></i><span class="form-info">  
+               <address>
+               400 M.A Roxas ST. <br>
+               BRGY. L.S.E, <br>
+               Angeles City, <br>
+               Pampanga<br>
+            <address>
+            </span><br>
+            <i class="fa fa-phone" > </i><span class="form-info">  09978555864</span><br>
+            <i class="fa fa-envelope"></i><span class="form-info">  deguzman.felixrafael@auf.edu.ph</span>
+          </div>
+          
+        
+      <div>        
+        <form>
+          <input type="text" placeholder="Your Name" required>
+          <input type="text" placeholder="Last Name"><br>
+          <input type="Email" placeholder="Email" required><br>
+          <input type="text" placeholder="Subject of this message"><br>
+          <textarea name="message" placeholder="Message" rows="5" required></textarea><br>
+          <button class="submit" >Send Message</button> 
+        </form>   
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-distributed">
+
+      <div class="footer-left">
+          <h3>Felix<span >De Guzman</span></h3>
+
+          <p class="footer-links">
+              <a href="#">Home</a>
+              |
+              <a href="#">About Me</a>
+              |
+              <a href="#">Contact</a>
+              |
+           
+          </p>
+
+          <p class="footer-company-name">Copyright © 2021 <strong>Felix De Guzman</strong> All rights reserved</p>
+      </div>
+
+      <div class="footer-center">
+          <div>
+              <i class="fa fa-map-marker"></i>
+              <p><span>Angeles City</span>
+                  Pampanga</p>
+          </div>
+
+          <div>
+              <i class="fa fa-phone"></i>
+              <p>09976555864</p>
+          </div>
+          <div>
+              <i class="fa fa-envelope"></i>
+              <p><a href="#">deguzman.felixrafael@auf.edu.ph</a></p>
+          </div>
+      </div>
+      <div class="footer-right">
+          <p class="footer-company-about">
+              <span>About AUF</span>
+              <strong>Felix De Guzman</strong> is a college student from AUF who wishes to be
+              a really well-known UI/UX developer. 
+ 
+          </p>
+          <div class="footer-icons">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-youtube"></i></a>
+          </div>
+      </div>
+  </footer>
+
+    
+</body>
+</html>
